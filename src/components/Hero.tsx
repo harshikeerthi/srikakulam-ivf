@@ -42,7 +42,7 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-8 lg:gap-10 xl:gap-14">
           
           {/* Left Column: Headlines & Discount Offer */}
-          <div className="space-y-4 sm:space-y-5 lg:col-span-7 order-2 lg:order-1">
+          <div className="space-y-4 sm:space-y-5 lg:col-span-7 order-1 lg:order-1">
             
             {/* Brand Eyebrow: MEDCY IVF (Poppins SemiBold) */}
             {(t.hero.brandTag || t.hero.badge) && (
@@ -139,7 +139,7 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
           </div>
 
           {/* Right Column: Registration Form */}
-          <div className="lg:col-span-5 order-1 lg:order-2">
+          <div className="lg:col-span-5 order-2 lg:order-2">
             <div className="bg-white relative shadow-xl border border-[#652D6C]/20 px-6 pt-7 pb-8 sm:px-7 sm:pt-8 sm:pb-9 lg:pt-9 lg:pb-10 rounded-2xl">
               
               {/* Form Header */}

@@ -11,7 +11,7 @@ export const MobileBottomBar: React.FC<MobileBottomBarProps> = ({ t, onBookClick
   return (
     <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-xl border-t border-[#652D6C]/20 p-3 shadow-2xl flex items-center gap-3">
       <a
-        href="tel:+919502534222"
+        href="tel:07799772221"
         className="flex-1 bg-[#FAF3FB] text-[#652D6C] border border-[#652D6C]/30 hover:bg-[#652D6C] hover:text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-xs transition-colors"
       >
         <Phone className="w-4 h-4 text-[#9A389F] animate-pulse" />

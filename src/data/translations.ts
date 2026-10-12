@@ -147,7 +147,7 @@ export const translations: Record<Language, Translation> = {
       brandName: "మెడ్సీ IVF",
       tagline: "MIRACLES MADE HERE",
       freeCampBadge: "ఉచిత మెడికల్ క్యాంప్",
-      phone: "+91 95025 34222",
+      phone: "077997 72221",
       bookAppointment: "అపాయింట్మెంట్ బుక్ చేయండి",
       emergencyCall: "నేరుగా కాల్ చేయండి",
       topBannerText: "ప్రతి నెల ప్రతి శనివారం నిర్వహించబడే ఉచిత మెడికల్ క్యాంప్",
@@ -155,11 +155,11 @@ export const translations: Record<Language, Translation> = {
       bookNow: "ఇప్పుడే బుక్ చేయండి",
       topBannerBadge: "ఉచిత సంప్రదింపులు • పరిమిత స్లాట్‌లు",
       topBannerTitle: "ప్రతి నెల ప్రతి శనివారం నిర్వహించబడే ఉచిత మెడికల్ క్యాంప్",
-      topBannerSubtitle: "ఈ రోజే మీ ఉచిత స్లాట్‌ను బుక్ చేసుకోండి మరియు వైజాగ్ టాప్ ఫెర్టిలిటీ నిపుణులను సంప్రదించండి.",
+      topBannerSubtitle: "ఈ రోజే మీ ఉచిత స్లాట్‌ను బుక్ చేసుకోండి మరియు శ్రీకాకుళం టాప్ ఫెర్టిలిటీ నిపుణులను సంప్రదించండి.",
       topBannerButton: "మీ ఉచిత స్లాట్‌ను బుక్ చేసుకోండి",
       campFormTitle: "ఉచిత మెడికల్ క్యాంప్ రిజిస్ట్రేషన్",
       campFormSubtitle: "ఉచిత నిపుణుల సంప్రదింపుల కోసం మీ ఉచిత స్లాట్‌ను ఇప్పుడే బుక్ చేసుకోండి",
-      campLocation: "మెడ్సీ IVF, చిన్నగదిలి ప్లాట్ 9A, హెల్త్ సిటీ, విశాఖపట్నం, అడవివరం, ఆంధ్రప్రదేశ్ 530040"
+      campLocation: "మెడ్సీ IVF, DAY&NIGHT Junction Convent Road, New Brg Rd, Bahadurlapeta, Srikakulam, Andhra Pradesh 532001"
     },
     hero: {
       badge: "MEDCY IVF",
@@ -169,7 +169,7 @@ export const translations: Record<Language, Translation> = {
       headlinePart2: "",
       tagline: "అత్యుత్తమ ఫెర్టిలిటీ సంరక్షణ. తల్లిదండ్రులు కావాలనే మీ ప్రయాణం ఇక్కడే మొదలవుతుంది.",
       subtext: "రుజువైన విజయవంతమైన రేట్లు, అగ్రశ్రేణి సంతానలేమి నిపుణులు మరియు అందుబాటు ధరల సంపూర్ణ చికిత్సా ప్రణాళికల కోసం మెడ్సీని ఎంచుకోండి. ఎటువంటి దాగి ఉన్న రుసుములు లేదా రిజిస్ట్రేషన్ ఛార్జీలు లేవు — మీరు తల్లిదండ్రులు కావడానికి తోడ్పడే నిజమైన నిపుణుల సంరక్షణ మాత్రమే.",
-      locationBadge: "అరిలోవ హెల్త్ సిటీ, విశాఖపట్నం",
+      locationBadge: "డే & నైట్ జంక్షన్, శ్రీకాకుళం",
       offerBadge: "శ్రీకాకుళం బ్రాంచ్ ప్రత్యేక ఆఫర్",
       offerText: "శ్రీకాకుళం బ్రాంచ్‌లో సంపూర్ణ IVF చికిత్స కేవలం ₹1.5 లక్షలకే!",
       offerOriginalPrice: "సాధారణ మార్కెట్ ధర: ₹1.9 లక్షలు",
@@ -310,7 +310,7 @@ export const translations: Record<Language, Translation> = {
         {
           number: "1",
           title: "8,000+ విజయవంతమైన కేసులు",
-          desc: "విశాఖపట్నం మరియు పరిసర ప్రాంతాలలో అత్యధిక సంతానలేమి విజయాలు.",
+          desc: "శ్రీకాకుళం మరియు పరిసర ప్రాంతాలలో అత్యధిక సంతానలేమి విజయాలు.",
           icon: "Trophy"
         },
         {
@@ -365,11 +365,11 @@ export const translations: Record<Language, Translation> = {
     },
     footer: {
       aboutTitle: "మెడ్సీ IVF & హాస్పిటల్స్",
-      aboutText: "విశాఖపట్నంలో 8,000 పైగా విజయవంతమైన IVF కేసులతో అత్యుత్తమ సంతానలేమి చికిత్స నందిస్తున్న విశ్వసనీయ ఫెర్టిలిటీ సెంటర్.",
+      aboutText: "శ్రీకాకుళంలో 8,000 పైగా విజయవంతమైన IVF కేసులతో అత్యుత్తమ సంతానలేమి చికిత్స నందిస్తున్న విశ్వసనీయ ఫెర్టిలిటీ సెంటర్.",
       addressTitle: "ఆసుపత్రి చిరునామా",
-      addressValue: "ప్లాట్ నెం. 9A, హెల్త్ సిటీ, అరిలోవ, విశాఖపట్నం – 530040",
+      addressValue: "DAY&NIGHT Junction Convent Road, New Brg Rd, Bahadurlapeta, Srikakulam, Andhra Pradesh 532001",
       phoneTitle: "హెల్ప్‌లైన్ & అపాయింట్మెంట్స్",
-      phoneValue: "+91 95025 34222",
+      phoneValue: "077997 72221",
       hoursTitle: "పని చేయు సమయాలు",
       hoursValue: "సోమవారం - ఆదివారం: ఉదయం 9:00 - సాయంత్రం 6:00",
       copyright: "© 2026 MEDCY IVF & Hospitals. సర్వ హక్కులూ ప్రత్యేకించబడ్డాయి."
@@ -392,7 +392,7 @@ export const translations: Record<Language, Translation> = {
       brandName: "MEDCY IVF",
       tagline: "MIRACLES MADE HERE",
       freeCampBadge: "FREE MEDICAL CAMP",
-      phone: "+91 95025 34222",
+      phone: "077997 72221",
       bookAppointment: "Book Appointment",
       emergencyCall: "Call Now Direct",
       topBannerText: "Free Medical Camp Conducted Every Saturday of the Month",
@@ -400,11 +400,11 @@ export const translations: Record<Language, Translation> = {
       bookNow: "Book Now",
       topBannerBadge: "FREE CONSULTATION • LIMITED SLOTS",
       topBannerTitle: "Free Medical Camp Conducted Every Saturday of the Month",
-      topBannerSubtitle: "Book Your Free Slot Today and consult with Vizag's top fertility specialists.",
+      topBannerSubtitle: "Book Your Free Slot Today and consult with Srikakulam's top fertility specialists.",
       topBannerButton: "Book Your Free Slot Today",
       campFormTitle: "Free Medical Camp Registration",
       campFormSubtitle: "Book your complimentary slot for a free expert fertility consultation",
-      campLocation: "Medcy IVF, Chinnagadili Plot 9A, Health City, Visakhapatnam, Adavivaram, Andhra Pradesh 530040"
+      campLocation: "Medcy IVF, DAY&NIGHT Junction Convent Road, New Brg Rd, Bahadurlapeta, Srikakulam, Andhra Pradesh 532001"
     },
     hero: {
       badge: "MEDCY IVF",
@@ -414,7 +414,7 @@ export const translations: Record<Language, Translation> = {
       headlinePart2: "",
       tagline: "Expert fertility care. Your journey to parenthood starts here.",
       subtext: "Choose Medcy for proven success rates, top-tier fertility specialists, and highly affordable, all-inclusive treatment plans. No hidden fees, no registration charges—just genuine, expert care to help you become parents.",
-      locationBadge: "Arilova Health City, Visakhapatnam",
+      locationBadge: "Day & Night Junction, Srikakulam",
       offerBadge: "SRIKAKULAM BRANCH SPECIAL OFFER",
       offerText: "In Srikakulam Branch, Complete IVF Treatment at ₹1.5 Lakhs Only",
       offerOriginalPrice: "Standard Market Price: ₹1.9 Lakhs",
@@ -586,7 +586,7 @@ export const translations: Record<Language, Translation> = {
     },
     ctaBanner: {
       title: "Your Dream of Parenthood is Just One Click Away",
-      subtitle: "Book Your Free Slot Today and consult with Vizag's top fertility specialists.",
+      subtitle: "Book Your Free Slot Today and consult with Srikakulam's top fertility specialists.",
       button: "Book Your Free Slot Today"
     },
     faq: {
@@ -610,11 +610,11 @@ export const translations: Record<Language, Translation> = {
     },
     footer: {
       aboutTitle: "MEDCY IVF & Hospitals",
-      aboutText: "Visakhapatnam's premier fertility & reproductive medicine institute with 8,000+ successful IVF cases.",
+      aboutText: "Srikakulam's premier fertility & reproductive medicine institute with 8,000+ successful IVF cases.",
       addressTitle: "Hospital Address",
-      addressValue: "Plot No. 9A, Health City, Arilova, Visakhapatnam – 530040",
+      addressValue: "DAY&NIGHT Junction Convent Road, New Brg Rd, Bahadurlapeta, Srikakulam, Andhra Pradesh 532001",
       phoneTitle: "Helpline & Appointments",
-      phoneValue: "+91 95025 34222",
+      phoneValue: "077997 72221",
       hoursTitle: "Working Hours",
       hoursValue: "Mon - Sun: 9:00 AM - 6:00 PM",
       copyright: "© 2026 MEDCY IVF & Hospitals. All rights reserved."
