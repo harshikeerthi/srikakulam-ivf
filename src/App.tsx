@@ -59,7 +59,7 @@ export function App() {
           onBookClick={handleBookClick} 
         />
 
-        {/* 3. Meet the Experts Section (Dr. Sireesha Rani & Dr. Sudheshna Devi) */}
+        {/* 3. Meet the Specialist Section (Dr. Vayilapalli Mitra Vinda) */}
         <DoctorsSection 
           t={t} 
           onDoctorClick={handleBookClick} 

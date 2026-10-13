@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Ribbon, Award, Sparkles } from 'lucide-react';
+import { GraduationCap, Award } from 'lucide-react';
 import { Translation } from '../data/translations';
 
 interface DoctorsSectionProps {
@@ -24,7 +24,7 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ t, onDoctorClick
         </div>
 
         {/* Doctor Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+        <div className={t.doctors.list.length === 1 ? "max-w-3xl mx-auto" : "grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10"}>
           {t.doctors.list.map((doctor) => (
             <div
               key={doctor.id}
@@ -36,20 +36,20 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ t, onDoctorClick
                 
                 {/* Left Side: Avatar Box & Name Badge Pill */}
                 <div className="flex flex-col items-center shrink-0 w-full sm:w-auto">
-                  <div className="w-36 h-36 sm:w-40 sm:h-40 rounded-2xl p-1 bg-gradient-to-tr from-[#652D6C] via-[#9A389F] to-[#4D1F53] shadow-md">
+                  <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl p-1 bg-gradient-to-tr from-[#652D6C] via-[#9A389F] to-[#4D1F53] shadow-md">
                     <img
                       src={doctor.photo}
                       alt={doctor.name}
                       className="w-full h-full object-cover object-top rounded-xl bg-white"
                       onError={(e) => {
                         // Fallback if image path needs fallback
-                        (e.target as HTMLElement).setAttribute('src', '/dr-sireesha-rani-ref.png');
+                        (e.target as HTMLElement).setAttribute('src', '/dr-mitra-vinda.png');
                       }}
                     />
                   </div>
 
                   {/* Dark Purple Name Badge Pill Under Photo */}
-                  <div className="mt-3 bg-[#652D6C] text-white px-4 py-1.5 rounded-full text-xs font-extrabold shadow-md tracking-wide text-center w-full max-w-[170px]">
+                  <div className="mt-3 bg-[#652D6C] text-white px-4 py-1.5 rounded-full text-xs font-extrabold shadow-md tracking-wide text-center w-full max-w-[200px]">
                     {doctor.name}
                   </div>
                 </div>
@@ -89,22 +89,12 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ t, onDoctorClick
 
               </div>
 
-              {/* Bottom Achievement Ribbon Badge & Action Button */}
-              <div className="mt-6 pt-4 border-t border-[#652D6C]/10 flex flex-wrap items-center justify-between gap-3">
+              {/* Bottom Achievement Ribbon Badge */}
+              <div className="mt-6 pt-4 border-t border-[#652D6C]/10 flex items-center justify-between">
                 <div className="flex items-center gap-2 text-xs sm:text-sm font-extrabold text-[#652D6C]">
                   <Award className="w-4 h-4 text-[#9A389F]" />
                   <span>{doctor.achievementBadge}</span>
                 </div>
-
-                {onDoctorClick && (
-                  <button
-                    onClick={() => onDoctorClick(doctor.name)}
-                    className="btn-accent px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-1.5 shadow-sm hover:scale-105 active:scale-95 transition-all cursor-pointer"
-                  >
-                    <span>{t.nav.bookAppointment}</span>
-                    <Sparkles className="w-3.5 h-3.5 text-[#3D1443]" />
-                  </button>
-                )}
               </div>
 
             </div>

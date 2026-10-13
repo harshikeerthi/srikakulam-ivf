@@ -278,29 +278,19 @@ export const translations: Record<Language, Translation> = {
       disclaimer: "గమనిక: రోగి ఆరోగ్య స్థితి మరియు వైద్యుల నివేదికల ఆధారంగా ఛార్జీలలో స్వల్ప మార్పులు ఉండవచ్చు."
     },
     doctors: {
-      badge: "మా స్పెషలిస్ట్ డాక్టర్స్",
+      badge: "మా స్పెషలిస్ట్ డాక్టర్",
       title: "మా ఫెర్టిలిటీ నిపుణులు",
-      subtitle: "దశాబ్దాల అనుభవం కలిగిన ప్రముఖ సంతానలేమి వైద్యుల బృందం మీ కలల కుటుంబాన్ని साकारం చేయడానికి నిరంతరం కృషి చేస్తోంది.",
+      subtitle: "సంతానలేమి సమస్యల పరిష్కారం మరియు గర్భాశయ & ప్రసూతి సంరక్షణలో నిపుణులైన ప్రముఖ వైద్యులు మీ సేవలో అందుబాటులో ఉంటారు.",
       list: [
         {
-          id: "dr-sireesha",
-          name: "డా. సిరీష రాణి",
-          title: "Founder & MD | Senior Infertility Specialist",
-          qualifications: "MBBS, DNB (Ob & Gyn), DRM (Kiel Germany)",
-          expBadge: "20+ YEARS EXP",
-          photo: "/dr-sireesha-rani.png",
-          bio: "జర్మన్ కీల్ IVF ప్రోటోకాల్స్, రీకరెంట్ వైఫల్యాలు మరియు హై-రిస్క్ ప్రెగ్నెన్సీ సంరక్షణలో ప్రత్యేక నైపుణ్యం కలిగిన ప్రముఖ సంతానలేమి నిపుణులు.",
-          achievementBadge: "8,000+ Success Stories"
-        },
-        {
-          id: "dr-sudeshna",
-          name: "డా. సుధేష్ణాదేవి",
-          title: "Fertility & Surgery Expert",
-          qualifications: "MBBS, DNB (Ob & Gyn), FRM, FMAS, Dip.Cos.Gynecology",
-          expBadge: "12+ YEARS EXP",
-          photo: "/dr-sudeshna-devi.png",
-          bio: "లాపరోస్కోపిక్ సర్జరీ, హిస్టెరోస్కోపీ, రిప్రొడక్టివ్ మెడిసిన్ మరియు వ్యక్తిగతీకరించిన అండాశయ ప్రేరణ విధానాలలో ప్రముఖ వైద్య నిపుణులు.",
-          achievementBadge: "Laparoscopic Specialist"
+          id: "dr-mitra-vinda",
+          name: "డా. వాయిలపల్లి మిత్ర వింద",
+          title: "కన్సల్టెంట్ అబ్‌స్టెట్రీషియన్ & గైనకాలజిస్ట్ | సంతానలేమి నిపుణులు",
+          qualifications: "MBBS, DGO (KGH), FRM",
+          expBadge: "FELLOWSHIP IN REPRODUCTIVE MEDICINE",
+          photo: "/dr-mitra-vinda.png",
+          bio: "రిప్రొడక్టివ్ మెడిసిన్‌లో ఫెలోషిప్ పూర్తి చేసి, అత్యాధునిక సంతానలేమి చికిత్సలు, హై-రిస్క్ ప్రెగ్నెన్సీ మరియు స్త్రీ ప్రసూతి సంరక్షణలో విశేష అనుభవం కలిగిన ప్రముఖ నిపుణులు.",
+          achievementBadge: "సంతానలేమి నిపుణులు"
         }
       ]
     },
@@ -523,29 +513,19 @@ export const translations: Record<Language, Translation> = {
       disclaimer: "Note: Treatment fees may vary slightly depending on individualized clinical evaluation."
     },
     doctors: {
-      badge: "MEET THE EXPERTS",
-      title: "Meet the Experts",
-      subtitle: "Trusted medical leadership with decades of proven experience in complex infertility & gynecological procedures.",
+      badge: "MEET OUR SPECIALIST",
+      title: "Meet Our Fertility Specialist",
+      subtitle: "Trusted medical expertise in reproductive medicine, comprehensive obstetrics, and advanced fertility treatments.",
       list: [
         {
-          id: "dr-sireesha",
-          name: "Dr. Sireesha Rani",
-          title: "Founder & MD | Senior Infertility Specialist",
-          qualifications: "MBBS, DNB (Ob & Gyn), DRM (Kiel Germany)",
-          expBadge: "20+ YEARS EXP",
-          photo: "/dr-sireesha-rani.png",
-          bio: "Pioneer in reproductive medicine with advanced specialization in German Kiel IVF protocols, recurrent failures, and high-risk pregnancy care.",
-          achievementBadge: "8,000+ Success Stories"
-        },
-        {
-          id: "dr-sudeshna",
-          name: "Dr. Sudheshna Devi",
-          title: "Fertility & Surgery Expert",
-          qualifications: "MBBS, DNB (Ob & Gyn), FRM, FMAS, Dip.Cos.Gynecology",
-          expBadge: "12+ YEARS EXP",
-          photo: "/dr-sudeshna-devi.png",
-          bio: "Expert in laparoscopic surgery, hysteroscopy, reproductive medicine, and personalized ovulation induction protocols.",
-          achievementBadge: "Laparoscopic Specialist"
+          id: "dr-mitra-vinda",
+          name: "Dr. Vayilapalli Mitra Vinda",
+          title: "Consultant Obstetrician & Gynecologist | Infertility Specialist",
+          qualifications: "MBBS, DGO (KGH), FRM",
+          expBadge: "FELLOWSHIP IN REPRODUCTIVE MEDICINE",
+          photo: "/dr-mitra-vinda.png",
+          bio: "Fellowship-trained in Reproductive Medicine with advanced clinical expertise in personalized infertility treatments, high-risk pregnancy care, and modern reproductive techniques.",
+          achievementBadge: "Infertility Specialist"
         }
       ]
     },
