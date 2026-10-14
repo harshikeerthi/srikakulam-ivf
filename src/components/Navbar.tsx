@@ -73,14 +73,13 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onBookClick })
             <span>{t.nav.phone}</span>
           </a>
 
-          {/* Book Appointment CTA */}
+          {/* Book Appointment CTA (Hidden on mobile, visible on sm and up) */}
           <button
             onClick={onBookClick}
-            className="btn-primary-purple px-2.5 sm:px-5 lg:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold flex items-center gap-1 sm:gap-2 shadow-md shrink-0 whitespace-nowrap cursor-pointer"
+            className="hidden sm:flex btn-primary-purple px-4 lg:px-6 py-2 rounded-full text-xs sm:text-sm font-bold items-center gap-2 shadow-md shrink-0 whitespace-nowrap cursor-pointer"
           >
             <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-pink-300 shrink-0" />
-            <span className="hidden sm:inline">{t.nav.bookAppointment}</span>
-            <span className="sm:hidden">Book</span>
+            <span>{t.nav.bookAppointment}</span>
           </button>
         </div>
       </div>

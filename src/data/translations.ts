@@ -93,6 +93,25 @@ export interface Translation {
       achievementBadge: string;
     }[];
   };
+  reviews: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    ratingScore: string;
+    reviewsCount: string;
+    branchName: string;
+    viewAllReviews: string;
+    gmbUrl: string;
+    items: {
+      id: string;
+      name: string;
+      badge: string;
+      rating: number;
+      date: string;
+      text: string;
+      treatment: string;
+    }[];
+  };
   whyChoose: {
     title: string;
     items: {
@@ -162,20 +181,20 @@ export const translations: Record<Language, Translation> = {
       campLocation: "మెడ్సీ IVF, DAY&NIGHT Junction Convent Road, New Brg Rd, Bahadurlapeta, Srikakulam, Andhra Pradesh 532001"
     },
     hero: {
-      badge: "MEDCY IVF",
-      brandTag: "MEDCY IVF",
+      badge: "VIZAG IVF",
+      brandTag: "VIZAG IVF",
       headlinePart1: "8,000+ కుటుంబాలు మాతో ఎదిగాయి.",
       headlineHighlight: "మీ కుటుంబం కూడా!",
       headlinePart2: "",
       tagline: "అత్యుత్తమ ఫెర్టిలిటీ సంరక్షణ. తల్లిదండ్రులు కావాలనే మీ ప్రయాణం ఇక్కడే మొదలవుతుంది.",
-      subtext: "రుజువైన విజయవంతమైన రేట్లు, అగ్రశ్రేణి సంతానలేమి నిపుణులు మరియు అందుబాటు ధరల సంపూర్ణ చికిత్సా ప్రణాళికల కోసం మెడ్సీని ఎంచుకోండి. ఎటువంటి దాగి ఉన్న రుసుములు లేదా రిజిస్ట్రేషన్ ఛార్జీలు లేవు — మీరు తల్లిదండ్రులు కావడానికి తోడ్పడే నిజమైన నిపుణుల సంరక్షణ మాత్రమే.",
+      subtext: "రుజువైన విజయవంతమైన ఫలితాలు, అగ్రశ్రేణి సంతానలేమి నిపుణులు మరియు అత్యుత్తమ చికిత్సా ప్రమాణాల కోసం వైజాగ్ IVFను ఎంచుకోండి. ఎటువంటి దాగి ఉన్న ఛార్జీలు లేవు — మీరు తల్లిదండ్రులు కావడానికి తోడ్పడే నిజమైన నిపుణుల సంరక్షణ మాత్రమే.",
       locationBadge: "డే & నైట్ జంక్షన్, శ్రీకాకుళం",
-      offerBadge: "శ్రీకాకుళం బ్రాంచ్ ప్రత్యేక ఆఫర్",
-      offerText: "శ్రీకాకుళం బ్రాంచ్‌లో సంపూర్ణ IVF చికిత్స కేవలం ₹1.5 లక్షలకే!",
-      offerOriginalPrice: "సాధారణ మార్కెట్ ధర: ₹1.9 లక్షలు",
-      offerSaveTag: "రూ. 40,000 తక్షణ ఆదా (సాధారణంగా ₹1.9L)!",
-      offerNote: "గమనిక: బయట క్లినిక్‌లలో రూ. 1.9L ఉండే ప్యాకేజీని మెడ్సీ IVF శ్రీకాకుళం బ్రాంచ్‌లో ప్రత్యేక ఆఫర్‌తో కేవలం రూ. 1.5L కే అందిస్తోంది.",
-      srikakulamOffer: "శ్రీకాకుళం బ్రాంచ్‌లో సంపూర్ణ IVF చికిత్స కేవలం ₹1.5 లక్షలకే!",
+      offerBadge: "శ్రీకాకుళం బ్రాంచ్",
+      offerText: "IVF ప్యాకేజీలు 1.8* లక్షల నుండి ప్రారంభం",
+      offerOriginalPrice: "",
+      offerSaveTag: "",
+      offerNote: "*తుది మొత్తం రోగి ఆరోగ్య స్థితిని బట్టి మారవచ్చు",
+      srikakulamOffer: "IVF ప్యాకేజీలు 1.8* లక్షల నుండి ప్రారంభం",
       keyPoints: [
         "ఉచిత నిపుణుల సంప్రదింపులు",
         "ఉచిత కౌన్సెలింగ్",
@@ -199,15 +218,15 @@ export const translations: Record<Language, Translation> = {
     stats: {
       cases: "8,000+",
       casesLabel: "విజయవంతమైన కేసులు",
-      startingPrice: "₹1.5L",
-      startingPriceLabel: "IVF ప్యాకేజ్ ప్రారంభం",
+      startingPrice: "₹1.8L*",
+      startingPriceLabel: "IVF ప్రారంభ ధర",
       successRate: "ఉచితం",
       successRateLabel: "సంప్రదింపులు & కౌన్సెలింగ్"
     },
     inclusions: {
       badge: "INCLUSIONS",
-      title: "1.5 Lakh Package Inclusions",
-      subtitle: "",
+      title: "IVF ప్యాకేజ్ చేర్పులు",
+      subtitle: "*రోగి ఆరోగ్య స్థితి మరియు అవసరాల ఆధారంగా",
       items: [
         {
           title: "IVF profiling tests & Scans",
@@ -278,10 +297,20 @@ export const translations: Record<Language, Translation> = {
       disclaimer: "గమనిక: రోగి ఆరోగ్య స్థితి మరియు వైద్యుల నివేదికల ఆధారంగా ఛార్జీలలో స్వల్ప మార్పులు ఉండవచ్చు."
     },
     doctors: {
-      badge: "మా స్పెషలిస్ట్ డాక్టర్",
+      badge: "మా స్పెషలిస్ట్ వైద్యులు",
       title: "మా ఫెర్టిలిటీ నిపుణులు",
       subtitle: "సంతానలేమి సమస్యల పరిష్కారం మరియు గర్భాశయ & ప్రసూతి సంరక్షణలో నిపుణులైన ప్రముఖ వైద్యులు మీ సేవలో అందుబాటులో ఉంటారు.",
       list: [
+        {
+          id: "dr-sireesha-rani",
+          name: "డా. శిరీషా రాణి",
+          title: "వ్యవస్థాపకులు & మేనేజింగ్ డైరెక్టర్ | సీనియర్ సంతానలేమి నిపుణులు",
+          qualifications: "MBBS, DNB (Ob & Gyn), DRM (Kiel Germany)",
+          expBadge: "20+ సంవత్సరాల అనుభవం",
+          photo: "/dr-sireesha-rani.png",
+          bio: "జర్మన్ కీల్ ఐవిఎఫ్ ప్రొటోకాల్స్, పునరావృత వైఫల్యాలు మరియు హై-రిస్క్ ప్రెగ్నెన్సీ చికిత్సలో విశేష నైపుణ్యం కలిగిన రిప్రొడక్టివ్ మెడిసిన్ నిపుణులు.",
+          achievementBadge: "8,000+ విజయవంతమైన కేసులు"
+        },
         {
           id: "dr-mitra-vinda",
           name: "డా. వాయిలపల్లి మిత్ర వింద",
@@ -291,6 +320,45 @@ export const translations: Record<Language, Translation> = {
           photo: "/dr-mitra-vinda.png",
           bio: "రిప్రొడక్టివ్ మెడిసిన్‌లో ఫెలోషిప్ పూర్తి చేసి, అత్యాధునిక సంతానలేమి చికిత్సలు, హై-రిస్క్ ప్రెగ్నెన్సీ మరియు స్త్రీ ప్రసూతి సంరక్షణలో విశేష అనుభవం కలిగిన ప్రముఖ నిపుణులు.",
           achievementBadge: "సంతానలేమి నిపుణులు"
+        }
+      ]
+    },
+    reviews: {
+      badge: "గూగుల్ రివ్యూలు",
+      title: "మా రోగుల సంతృప్తి & అనుభవాలు",
+      subtitle: "వైజాగ్ IVF శ్రీకాకుళం సెంటర్‌లో చికిత్స పొంది తల్లిదండ్రులైన దంపతుల నిజమైన గూగుల్ రేటింగ్‌లు",
+      ratingScore: "5.0",
+      reviewsCount: "47+ గూగుల్ రివ్యూలు",
+      branchName: "వైజాగ్ IVF సెంటర్ - బహదూర్‌లపేట, శ్రీకాకుళం",
+      viewAllReviews: "గూగుల్ బిజినెస్ ప్రొఫైల్‌లో అన్ని రివ్యూలు చూడండి",
+      gmbUrl: "https://www.google.com/search?q=vizag+ivf+srikakulam&rlz=1C1CHZN_enIN1233IN1233&oq=vizag+ivf+sr&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYgAQYnwQyDQgAEAAY4wIYgAQYnwQyDwgBEC4YJxivARjHARiOBTIGCAIQRRg5Mg0IAxAAGIYDGIAEGIoFMgcIBBAAGO8FMgcIBRAAGO8FMgcIBgAAGO8FMgoIBxAAGIAEGKIEMgcICBAAGO8F0gEINzU1OGowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+      items: [
+        {
+          id: "rev-1",
+          name: "కె. స్వప్న రావు",
+          badge: "వెరిఫైడ్ పేషెంట్",
+          rating: 5,
+          date: "ఇటీవల",
+          text: "శ్రీకాకుళం వైజాగ్ IVF సెంటర్‌కు రాకముందు మేము 6 సంవత్సరాలుగా ప్రయత్నిస్తున్నాము. డా. శిరీషా రాణి మేడమ్ మరియు డా. మిత్ర వింద గారి ధైర్యం, మార్గదర్శకత్వం వల్ల మా కల నెరవేరింది. పారదర్శకమైన చికిత్స మరియు అద్భుతమైన సంరక్షణ!",
+          treatment: "IVF చికిత్స విజయం"
+        },
+        {
+          id: "rev-2",
+          name: "రమేష్ & ప్రసన్న కుమార్",
+          badge: "లోకల్ గైడ్",
+          rating: 5,
+          date: "గత నెల",
+          text: "శ్రీకాకుళం జిల్లాలోనే అత్యుత్తమ ఫెర్టిలిటీ హాస్పిటల్. వైద్యులు వ్యక్తిగత శ్రద్ధ తీసుకుని ప్రతి విషయాన్ని వివరంగా చెప్పారు. జర్మన్ ప్రమాణాలు కలిగిన ఎంబ్రియోలాజీ ల్యాబ్ ఉండడం వల్ల మాకు మొదటి ప్రయత్నంలోనే పాజిటివ్ వచ్చింది.",
+          treatment: "మొదటి సైకిల్ విజయం"
+        },
+        {
+          id: "rev-3",
+          name: "బి. అనిత రెడ్డి",
+          badge: "వెరిఫైడ్ పేషెంట్",
+          rating: 5,
+          date: "2 నెలల క్రితం",
+          text: "చాలా పరిశుభ్రమైన వాతావరణం మరియు సహాయకరమైన సిబ్బంది. ఎటువంటి దాగి ఉన్న ఛార్జీలు లేవు. డాక్టర్లు రోగులను కుటుంబ సభ్యులలా చూసుకుంటారు. శ్రీకాకుళంలో వైజాగ్ IVFను మేము ఖచ్చితంగా సిఫార్సు చేస్తున్నాము.",
+          treatment: "అడ్వాన్స్‌డ్ ఫెర్టిలిటీ కేర్"
         }
       ]
     },
@@ -397,20 +465,20 @@ export const translations: Record<Language, Translation> = {
       campLocation: "Medcy IVF, DAY&NIGHT Junction Convent Road, New Brg Rd, Bahadurlapeta, Srikakulam, Andhra Pradesh 532001"
     },
     hero: {
-      badge: "MEDCY IVF",
-      brandTag: "MEDCY IVF",
+      badge: "VIZAG IVF",
+      brandTag: "VIZAG IVF",
       headlinePart1: "8,000+ Families Grew With Us.",
       headlineHighlight: "Yours Can Too.",
       headlinePart2: "",
       tagline: "Expert fertility care. Your journey to parenthood starts here.",
-      subtext: "Choose Medcy for proven success rates, top-tier fertility specialists, and highly affordable, all-inclusive treatment plans. No hidden fees, no registration charges—just genuine, expert care to help you become parents.",
+      subtext: "Choose Vizag IVF for proven success rates, top-tier fertility specialists, and transparent, high-standard care. No hidden fees, no registration charges—just genuine, expert care to help you become parents.",
       locationBadge: "Day & Night Junction, Srikakulam",
-      offerBadge: "SRIKAKULAM BRANCH SPECIAL OFFER",
-      offerText: "In Srikakulam Branch, Complete IVF Treatment at ₹1.5 Lakhs Only",
-      offerOriginalPrice: "Standard Market Price: ₹1.9 Lakhs",
-      offerSaveTag: "SAVE ₹40,000 VS REGULAR ₹1.9L!",
-      offerNote: "Note: Standard market clinics charge ₹1.9 Lakhs — Medcy IVF provides complete treatment package at ₹1.5 Lakhs in Srikakulam Branch.",
-      srikakulamOffer: "In Srikakulam Branch, Complete IVF Treatment at ₹1.5 Lakhs Only",
+      offerBadge: "SRIKAKULAM CENTRE",
+      offerText: "IVF Packages starting from 1.8* lakhs onwards",
+      offerOriginalPrice: "",
+      offerSaveTag: "",
+      offerNote: "*final amount may vary from patient to patient",
+      srikakulamOffer: "IVF Packages starting from 1.8* lakhs onwards",
       keyPoints: [
         "Free Expert Consultation",
         "Free Counselling",
@@ -429,20 +497,20 @@ export const translations: Record<Language, Translation> = {
       slotOptions: ["10:00 AM - 07:00 PM", "10:00 AM - 01:00 PM", "01:00 PM - 04:00 PM", "04:00 PM - 07:00 PM"],
       submitButton: "Confirm Booking",
       submitting: "Submitting...",
-      privacyNote: "🔒 Your personal information is strictly confidential."
+      privacyNote: "Your personal information is strictly confidential."
     },
     stats: {
       cases: "8,000+",
       casesLabel: "Successful Cases",
-      startingPrice: "₹1.5L",
-      startingPriceLabel: "Starting IVF Package",
+      startingPrice: "₹1.8L*",
+      startingPriceLabel: "Starting From",
       successRate: "FREE",
       successRateLabel: "Consultation & Counselling"
     },
     inclusions: {
       badge: "INCLUSIONS",
-      title: "1.5 Lakh Package Inclusions",
-      subtitle: "",
+      title: "IVF Treatment Inclusions",
+      subtitle: "*Customized based on individualized clinical evaluation",
       items: [
         {
           title: "IVF profiling tests & Scans",
@@ -513,10 +581,20 @@ export const translations: Record<Language, Translation> = {
       disclaimer: "Note: Treatment fees may vary slightly depending on individualized clinical evaluation."
     },
     doctors: {
-      badge: "MEET OUR SPECIALIST",
-      title: "Meet Our Fertility Specialist",
-      subtitle: "Trusted medical expertise in reproductive medicine, comprehensive obstetrics, and advanced fertility treatments.",
+      badge: "MEET OUR SPECIALISTS",
+      title: "Meet Our Fertility Specialists",
+      subtitle: "Trusted medical leadership in advanced reproductive medicine, German Kiel IVF protocols, and comprehensive infertility treatments.",
       list: [
+        {
+          id: "dr-sireesha-rani",
+          name: "Dr. Sireesha Rani",
+          title: "Founder & MD | Senior Infertility Specialist",
+          qualifications: "MBBS, DNB (Ob & Gyn), DRM (Kiel Germany)",
+          expBadge: "20+ YEARS EXP",
+          photo: "/dr-sireesha-rani.png",
+          bio: "Pioneer in reproductive medicine with advanced specialization in German Kiel IVF protocols, recurrent failures, and high-risk pregnancy care.",
+          achievementBadge: "8,000+ Success Stories"
+        },
         {
           id: "dr-mitra-vinda",
           name: "Dr. Vayilapalli Mitra Vinda",
@@ -526,6 +604,45 @@ export const translations: Record<Language, Translation> = {
           photo: "/dr-mitra-vinda.png",
           bio: "Fellowship-trained in Reproductive Medicine with advanced clinical expertise in personalized infertility treatments, high-risk pregnancy care, and modern reproductive techniques.",
           achievementBadge: "Infertility Specialist"
+        }
+      ]
+    },
+    reviews: {
+      badge: "GOOGLE REVIEWS",
+      title: "Real Patient Experiences & Stories",
+      subtitle: "Verified Google reviews from couples who achieved parenthood with Vizag IVF Centre Srikakulam",
+      ratingScore: "5.0",
+      reviewsCount: "47 Google reviews",
+      branchName: "Vizag IVF Centre - Bahadurlapeta, Srikakulam",
+      viewAllReviews: "View All Reviews on Google Business Profile",
+      gmbUrl: "https://www.google.com/search?q=vizag+ivf+srikakulam&rlz=1C1CHZN_enIN1233IN1233&oq=vizag+ivf+sr&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYgAQYnwQyDQgAEAAY4wIYgAQYnwQyDwgBEC4YJxivARjHARiOBTIGCAIQRRg5Mg0IAxAAGIYDGIAEGIoFMgcIBBAAGO8FMgcIBRAAGO8FMgcIBgAAGO8FMgoIBxAAGIAEGKIEMgcICBAAGO8F0gEINzU1OGowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+      items: [
+        {
+          id: "rev-1",
+          name: "K. Swapna Rao",
+          badge: "Verified Patient",
+          rating: 5,
+          date: "Recently",
+          text: "We had been trying for 6 years before visiting Vizag IVF Srikakulam. Dr. Sireesha Rani and Dr. Mitra Vinda gave us immense confidence. The treatment was transparent, affordable, and our dream of parenthood came true!",
+          treatment: "IVF Treatment Success"
+        },
+        {
+          id: "rev-2",
+          name: "Ramesh & Prasanna Kumar",
+          badge: "Local Guide",
+          rating: 5,
+          date: "Last month",
+          text: "Best fertility hospital in Srikakulam district. Doctors take utmost personal care and explain each procedure clearly. German protocols and embryology lab standards are top notch. Positive result in our very first cycle!",
+          treatment: "First Cycle Positive"
+        },
+        {
+          id: "rev-3",
+          name: "B. Anitha Reddy",
+          badge: "Verified Patient",
+          rating: 5,
+          date: "2 months ago",
+          text: "Very hygienic hospital with friendly and supportive staff. Clean environment and no hidden fees at all. Doctors treat patients like family members. Highly recommend Vizag IVF Srikakulam to everyone seeking genuine guidance.",
+          treatment: "Advanced Fertility Care"
         }
       ]
     },

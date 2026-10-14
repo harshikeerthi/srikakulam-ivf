@@ -1,7 +1,7 @@
 // Google Sheets Integration Utility
-// Enter your published Google Apps Script Web App URL below or set VITE_GOOGLE_SCRIPT_URL in .env file
+// Direct endpoint URL for logging form leads
 
-export const GOOGLE_SCRIPT_URL = (import.meta as any).env?.VITE_GOOGLE_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbwh2kgaOBuzQO6pziuXQ-CO1MrHtPXoTqw8k2J0ntmdntmvdPhT2z5n0cnD4iml3-F50Q/exec';
+export const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwh2kgaOBuzQO6pziuXQ-CO1MrHtPXoTqw8k2J0ntmdntmvdPhT2z5n0cnD4iml3-F50Q/exec';
 
 export interface FormSubmissionData {
   name: string;

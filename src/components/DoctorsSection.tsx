@@ -9,16 +9,16 @@ interface DoctorsSectionProps {
 
 export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ t, onDoctorClick }) => {
   return (
-    <section id="doctors" className="py-20 sm:py-28 bg-gradient-to-b from-[#FAF6FA] via-[#FFFFFF] to-[#FAF6FA] relative">
+    <section id="doctors" className="pt-8 sm:pt-10 pb-8 sm:pb-10 bg-gradient-to-b from-[#FAF6FA] via-[#FFFFFF] to-[#FAF6FA] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3">
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-[#2A102D] tracking-tight">
+        <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8 space-y-2.5">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2A102D] tracking-tight">
             {t.doctors.title}
           </h2>
 
-          <p className="text-base sm:text-lg text-[#56335B] font-medium leading-relaxed">
+          <p className="text-sm sm:text-base text-[#56335B] font-medium leading-relaxed">
             {t.doctors.subtitle}
           </p>
         </div>
@@ -57,20 +57,15 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ t, onDoctorClick
                 {/* Right Side: Details & Qualifications */}
                 <div className="space-y-3.5 flex-1 w-full pt-1 sm:pt-0">
                   
-                  {/* Doctor Name & Experience Badge Header Track */}
-                  <div className="flex flex-wrap items-center justify-between gap-2">
+                  {/* Doctor Name */}
+                  <div className="space-y-1">
                     <h3 className="text-2xl sm:text-3xl font-extrabold text-[#2A102D] tracking-tight">
                       {doctor.name}
                     </h3>
-                    <span className="inline-block px-3 py-1 rounded-full bg-[#FAF3FB] border border-[#652D6C]/20 text-[#652D6C] text-xs font-black uppercase tracking-wider shadow-sm shrink-0">
-                      {doctor.expBadge}
-                    </span>
+                    <p className="text-xs sm:text-sm font-bold text-[#652D6C]">
+                      {doctor.title}
+                    </p>
                   </div>
-
-                  {/* Title / Designation */}
-                  <p className="text-xs sm:text-sm font-bold text-[#652D6C]">
-                    {doctor.title}
-                  </p>
 
                   {/* Qualifications Pill Box (matching reference image) */}
                   <div className="p-3.5 rounded-2xl bg-[#FAF3FB] border border-[#652D6C]/15 flex items-start gap-2.5">
@@ -89,12 +84,16 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ t, onDoctorClick
 
               </div>
 
-              {/* Bottom Achievement Ribbon Badge */}
-              <div className="mt-6 pt-4 border-t border-[#652D6C]/10 flex items-center justify-between">
+              {/* Bottom Achievement & Experience Ribbon Bar (matches reference image) */}
+              <div className="mt-6 pt-4 border-t border-[#652D6C]/10 flex flex-wrap items-center justify-between gap-2">
                 <div className="flex items-center gap-2 text-xs sm:text-sm font-extrabold text-[#652D6C]">
                   <Award className="w-4 h-4 text-[#9A389F]" />
                   <span>{doctor.achievementBadge}</span>
                 </div>
+
+                <span className="inline-block px-3 py-1 rounded-full bg-[#FAF3FB] border border-[#652D6C]/20 text-[#652D6C] text-xs font-black uppercase tracking-wider shadow-sm shrink-0">
+                  {doctor.expBadge}
+                </span>
               </div>
 
             </div>
