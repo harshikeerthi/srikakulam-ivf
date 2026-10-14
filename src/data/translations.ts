@@ -190,11 +190,11 @@ export const translations: Record<Language, Translation> = {
       subtext: "రుజువైన విజయవంతమైన ఫలితాలు, అగ్రశ్రేణి సంతానలేమి నిపుణులు మరియు అత్యుత్తమ చికిత్సా ప్రమాణాల కోసం వైజాగ్ IVFను ఎంచుకోండి. ఎటువంటి దాగి ఉన్న ఛార్జీలు లేవు — మీరు తల్లిదండ్రులు కావడానికి తోడ్పడే నిజమైన నిపుణుల సంరక్షణ మాత్రమే.",
       locationBadge: "డే & నైట్ జంక్షన్, శ్రీకాకుళం",
       offerBadge: "శ్రీకాకుళం బ్రాంచ్",
-      offerText: "IVF ప్యాకేజీలు 1.8* లక్షల నుండి ప్రారంభం",
+      offerText: "IVF ప్యాకేజీలు 1.5* లక్షల నుండి ప్రారంభం",
       offerOriginalPrice: "",
       offerSaveTag: "",
       offerNote: "*తుది మొత్తం రోగి ఆరోగ్య స్థితిని బట్టి మారవచ్చు",
-      srikakulamOffer: "IVF ప్యాకేజీలు 1.8* లక్షల నుండి ప్రారంభం",
+      srikakulamOffer: "IVF ప్యాకేజీలు 1.5* లక్షల నుండి ప్రారంభం",
       keyPoints: [
         "ఉచిత నిపుణుల సంప్రదింపులు",
         "ఉచిత కౌన్సెలింగ్",
@@ -218,7 +218,7 @@ export const translations: Record<Language, Translation> = {
     stats: {
       cases: "8,000+",
       casesLabel: "విజయవంతమైన కేసులు",
-      startingPrice: "₹1.8L*",
+      startingPrice: "₹1.5L*",
       startingPriceLabel: "IVF ప్రారంభ ధర",
       successRate: "ఉచితం",
       successRateLabel: "సంప్రదింపులు & కౌన్సెలింగ్"
@@ -474,11 +474,11 @@ export const translations: Record<Language, Translation> = {
       subtext: "Choose Vizag IVF for proven success rates, top-tier fertility specialists, and transparent, high-standard care. No hidden fees, no registration charges—just genuine, expert care to help you become parents.",
       locationBadge: "Day & Night Junction, Srikakulam",
       offerBadge: "SRIKAKULAM CENTRE",
-      offerText: "IVF Packages starting from 1.8* lakhs onwards",
+      offerText: "IVF Packages starting from 1.5* lakhs onwards",
       offerOriginalPrice: "",
       offerSaveTag: "",
       offerNote: "*final amount may vary from patient to patient",
-      srikakulamOffer: "IVF Packages starting from 1.8* lakhs onwards",
+      srikakulamOffer: "IVF Packages starting from 1.5* lakhs onwards",
       keyPoints: [
         "Free Expert Consultation",
         "Free Counselling",
@@ -502,7 +502,7 @@ export const translations: Record<Language, Translation> = {
     stats: {
       cases: "8,000+",
       casesLabel: "Successful Cases",
-      startingPrice: "₹1.8L*",
+      startingPrice: "₹1.5L*",
       startingPriceLabel: "Starting From",
       successRate: "FREE",
       successRateLabel: "Consultation & Counselling"
